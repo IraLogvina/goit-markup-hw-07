@@ -1,0 +1,97 @@
+/* Portfolio.html - Страница Портфолио */
+
+.our-works{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.worktype-filters{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.worktype-filters-item:not(:last-child){
+    margin-right: 8px;
+}
+
+.work-examples h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+}
+
+.work-examples p {
+    font-size: 16px;
+    line-height: 30px;
+/* identical to box height, or 187% */
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+.worktype-filters .filter-button.current{
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+}
+
+.work-examples{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-examples-item{
+    width: 370px;
+    margin: 0px 30px 30px 0px;
+    border: 1px solid var(--portfolio-border-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work-examples-item:nth-child(3n + 3) {
+    margin-right: 0px;
+}
+
+.work-examples-item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+}
+
+.work-examples-item:hover,
+.work-examples-item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.work-examples-text{
+    padding: 20px 24px;
+}
+
+/* Оформление оверлея*/
+
+.work-examples-img-thumb{
+    position: relative;
+    overflow: hidden;
+}
+
+.work-examples .img-text{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 28px;
+/* or 156% */
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work-examples .work-examples-item:hover .img-text{
+    transform: translateY(0);
+}
