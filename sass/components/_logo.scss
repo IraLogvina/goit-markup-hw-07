@@ -12,6 +12,20 @@
     text-decoration: none;
     padding-top: 24px;
     padding-bottom: 25px;
+
+    &:hover,
+    &:focus,
+    &:active{
+        color: var(--accent-color);
+    }
+
+
+    .footer & {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0 0 0 0;
+}
+
 }
 
 .logo-studio{
@@ -22,8 +36,4 @@
     color: var(--white-text-color);
 }
 
-.logo:hover,
-.logo:active,
-.logo:focus {
-    color: var(--accent-color);
-}
+

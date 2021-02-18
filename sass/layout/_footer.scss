@@ -4,11 +4,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background: var(--main-background-color);
-}
 
-.footer .conteiner{
-    display: flex;
-    align-items: baseline;
+    & .social-link-footer{
+        background-color: var(--social-link-background-color);
+    }
 }
 
 .contacts-item {
@@ -18,12 +17,6 @@
 .contacts-footer{
     margin-right: 70px;
     width: 231px;
-}
-
-.footer .logo{
-    display: block;
-    margin-bottom: 20px;
-    padding: 0 0 0 0;
 }
 
 .address{
@@ -40,12 +33,12 @@
     letter-spacing: 0.03em;
     color: var(--contacts-color);
     text-decoration: none; 
-}
 
-.contacts:hover,
-.contacts:active,
-.contacts:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:active,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .social-links-footer{
@@ -67,10 +60,6 @@
     height: 44px;
 }
 
-.footer .social-link-footer{
-    background-color: var(--social-link-background-color);
-}
-
 .social-links-list-footer{
     display: flex;
 }
@@ -89,13 +78,14 @@
     fill: currentColor;
     color: var(--white-text-color);
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        background-color: var(--accent-color);
+        color: var(--white-text-color);
+        fill: var(--white-text-color);
 }
 
-.social-link-footer:hover,
-.social-link-footer:focus{
-    background-color: var(--accent-color);
-    color: var(--white-text-color);
-    fill: var(--white-text-color);
 }
 /* Подпишитесь на рассылку */
 
@@ -129,31 +119,13 @@
     font-size: 16px;
     letter-spacing: 0.03em;
     line-height: 1.25;
-}
 
-.footer-input:focus{
-    border: 1px solid var(--accent-color);
-    outline: none;
-    cursor: pointer;
-}
+    &:focus{
+        border: 1px solid var(--accent-color);
+        outline: none;
+        cursor: pointer;
+    }
 
-.footer-button{
-    display: flex;
-    align-items: center;
-    padding: 10px 29px;
-    font-size: 16px;
-    line-height: 1.87;
-    width: 200px;
-    height: 50px;
-    /* identical to box height, or 187% */
-    letter-spacing: 0.06em;  
-    text-transform: capitalize;
-    background-color: var(--accent-color);
-    color: var(--white-text-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
 }
 
 .email-icon-footer{

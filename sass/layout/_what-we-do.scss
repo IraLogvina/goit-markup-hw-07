@@ -8,13 +8,13 @@
     display: flex;
 }
 
-.what-we-do-img:not(:last-child) {
-    margin-right: 30px;
-}
-
 .what-we-do-img{
     position: relative;
     overflow: hidden;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .what-we-do-img-thumb{

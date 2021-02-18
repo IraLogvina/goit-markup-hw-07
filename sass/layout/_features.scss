@@ -6,7 +6,6 @@
     padding-bottom: 94px;
 }
 
-
 .feature-title{
     margin-bottom: 10px;
     line-height: 16px;
@@ -34,10 +33,10 @@
 
 .feature-item{
     min-width: 270px;
-}
 
-.feature-item:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .feature-text{
