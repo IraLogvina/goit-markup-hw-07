@@ -1,4 +1,19 @@
 
+.worktype-filters{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.worktype-filters-item:not(:last-child){
+    margin-right: 8px;
+}
+
+.worktype-filters .filter-button.current{
+    background-color: var(--accent-color);
+    color: var(--white-text-color);
+}
+
 .filter-button{
     padding: 6px 22px;
     font-family: inherit;

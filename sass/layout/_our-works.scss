@@ -1,18 +1,6 @@
-/* Portfolio.html - Страница Портфолио */
-
 .our-works{
     padding-top: 94px;
     padding-bottom: 94px;
-}
-
-.worktype-filters{
-    display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
-}
-
-.worktype-filters-item:not(:last-child){
-    margin-right: 8px;
 }
 
 .work-examples h2 {
@@ -29,11 +17,6 @@
 /* identical to box height, or 187% */
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
-}
-
-.worktype-filters .filter-button.current{
-    background-color: var(--accent-color);
-    color: var(--white-text-color);
 }
 
 .work-examples{
