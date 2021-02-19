@@ -46,7 +46,7 @@ a {
 body {
   background-color: var(--white-text-color);
   color: var(--primary-text-color);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 14px;
 }
@@ -84,6 +84,8 @@ body {
   --hero-gradient-color:  rgba(47, 48, 58, 0.4);
   --portfolio-border-color: #EEEEEE;
   --black-color: #000000;
+  --main-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
 }
 
 .visually-hidden {
@@ -98,9 +100,21 @@ body {
   overflow: hidden;
 }
 
+.worktype-filters, .nav-info, .social-link-footer, .footer-form, .footer-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /* Logo WebStudio - Оформление логотипа */
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--logo-font);
   font-style: normal;
   font-size: 26px;
   font-weight: 700;
@@ -144,6 +158,8 @@ body {
   cursor: pointer;
   border-radius: 4px;
   border: none;
+  -webkit-transition-property: all;
+  transition-property: all;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -170,16 +186,16 @@ body {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .worktype-filters {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-bottom: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .worktype-filters-item:not(:last-child) {
@@ -198,8 +214,12 @@ body {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover, .filter-button:focus {
@@ -224,15 +244,6 @@ body {
 }
 
 /* Navigation - Навигация по сайту */
-.nav-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 /* Оформление навигационного списка */
 .nav-list {
   display: -webkit-box;
@@ -282,8 +293,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* Подсвечивание текущей ссылки */
 }
 
@@ -333,8 +348,8 @@ body {
   fill: currentColor;
   padding-top: 32px;
   padding-bottom: 32px;
-  -webkit-transition-property: color;
-  transition-property: color;
+  -webkit-transition-property: all;
+  transition-property: all;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -418,15 +433,6 @@ body {
 }
 
 .social-link-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -453,25 +459,7 @@ body {
   margin-left: 93px;
 }
 
-.footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .footer-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -536,10 +524,10 @@ body {
   width: 370px;
   margin: 0px 30px 30px 0px;
   border: 1px solid var(--portfolio-border-color);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: color;
+          transition-duration: color;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -575,13 +563,16 @@ body {
   font-weight: 400;
   line-height: 1.556;
   letter-spacing: 0.03em;
-  /* or 156% */
   color: var(--white-text-color);
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-examples-item:hover .overlay {

@@ -41,7 +41,7 @@ a{
 body {
     background-color: var(--white-text-color);
     color: var(--primary-text-color);
-    font-family: "Roboto", sans-serif;
+    font-family: var(--main-font);
     font-weight: 400;
     font-size: 14px;
 }

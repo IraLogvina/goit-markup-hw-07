@@ -36,3 +36,9 @@
     line-height: decimal-round($lh/$fs, 3);
     letter-spacing: $ls;
 }
+
+@mixin transition($tp:all, $td:250ms, $tf:cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition-property: $tp;
+  transition-duration: $td;
+  transition-timing-function: $tf;
+}

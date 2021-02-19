@@ -1,14 +1,9 @@
 /* Logo WebStudio - Оформление логотипа */
 
 .logo{
-    font-family: "Raleway", sans-serif;
+    font-family: var(--logo-font);
     font-style: normal;
     @include font (26px, 700, 31px, 0.03em);
-    // font-weight: bold;
-    // font-size: 26px;
-    // line-height: 31px;
-    // /* identical to box height */
-    // letter-spacing: 0.03em;
     color: var(--accent-color);
     text-decoration: none;
     padding-top: 24px;
