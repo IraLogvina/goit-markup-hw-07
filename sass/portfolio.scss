@@ -3,11 +3,12 @@
 @import "./base/conteiner";
 
 @import "./components/logo";
-@import "./components/buttons";
+@import "./components/filter-buttons";
+
+@import "./utils/mixins";
 @import "./utils/variabels";
 @import "./utils/visually-hidden";
 
-@import "./components/filter-buttons";
 
 @import "./layout/header";
 @import "./layout/footer";

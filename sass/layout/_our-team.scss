@@ -34,21 +34,25 @@
 .person-title{
     margin-bottom: 10px;
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
+    @include font(16px, 500, 19px, 0.03em);
+
+    // font-weight: 500;
+    // font-size: 16px;
+    // line-height: 19px;
+    // /* identical to box height */
     text-align: center;
-    letter-spacing: 0.03em;
+    // letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 
 .person-text{
     margin-bottom: 16px;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
+    @include font(16px, 400, 19px, 0.03em);
+
+    // font-size: 16px;
+    // line-height: 19px;
+    // /* identical to box height */
     text-align: center;
-    letter-spacing: 0.03em;
+    // letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }

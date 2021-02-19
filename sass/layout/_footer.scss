@@ -20,17 +20,13 @@
 }
 
 .address{
-    line-height: 24px;
-    /* or 171% */
-    letter-spacing: 0.03em;
+    @include font(14px, 400, 24px, 0.03em);
     color: var(--white-text-color);
     text-decoration: none; 
 }
 
 .contacts{
-    line-height: 24px;
-    /* or 171% */
-    letter-spacing: 0.03em;
+    @include font(14px, 400, 24px, 0.03em);
     color: var(--contacts-color);
     text-decoration: none; 
 
@@ -48,9 +44,7 @@
 .social-title-footer{
     margin-top: 0px;
     margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    @include font(14px, 700, 16px, 0.03em);
     text-transform: uppercase;
     color: var(--white-text-color);
 }
@@ -116,9 +110,7 @@
     border-radius: 4px; 
     color: var(--white-text-color);
     background-color: var(--main-background-color);
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    line-height: 1.25;
+    @include font(16px, 400, 20px, 0.03em);
 
     &:focus{
         border: 1px solid var(--accent-color);

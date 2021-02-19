@@ -55,17 +55,19 @@
 .nav-list-link{
     display: flex;
     font-style: normal;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.02em;
+    @include font(14px, 500, 16px, 0.02em);
+    // font-weight: 500;
+    // line-height: 16px;
+    // letter-spacing: 0.02em;
     color: var(--primary-text-color);
     text-decoration: none; 
     padding-top: 32px;
     padding-bottom: 32px;
     align-items: center;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: color;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:active,
@@ -85,9 +87,10 @@
 .contacts-list{
     display: flex;
     margin: 0 0 0 auto;
-    line-height: 24px;
-    /* or 171% */
-    letter-spacing: 0.03em;
+    @include font(14px, 400, 24px, 0.03em);
+    // line-height: 24px;
+    // /* or 171% */
+    // letter-spacing: 0.03em;
     color: var(--contacts-color);
     text-decoration: none; 
 }
@@ -103,8 +106,9 @@
 .contacts-list-link {
     display: flex;
     align-items: center;
-    line-height: 16px;
-    letter-spacing: 0.02em;
+    @include font(14px, 400, 16px, 0.02em);
+    // line-height: 16px;
+    // letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     text-decoration: none; 
     fill:currentColor;

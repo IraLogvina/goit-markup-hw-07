@@ -2,33 +2,32 @@
 .what-we-do-title{
     margin-bottom: 50px;
     font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
+    @include font(36px, 700, 42px, 0.03em);
+    // font-weight: bold;
+    // font-size: 36px;
+    // line-height: 42px;
     text-align: center;
-    letter-spacing: 0.03em;
+    // letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 
 .our-team-title {
     margin-bottom: 50px;
     font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
+    @include font(36px, 700, 42px, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 
 .our-clients-title{
     margin-bottom: 50px;
     font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 42px;
+    @include font(36px, 700, 42px, 0.03em);
+    // font-weight: bold;
+    // font-size: 36px;
+    // line-height: 42px;
     text-align: center;
-    letter-spacing: 0.03em;
+    // letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 

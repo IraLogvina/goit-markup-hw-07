@@ -8,8 +8,7 @@
 
 .feature-title{
     margin-bottom: 10px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    @include font(14px, 700, 16px, 0.03em);
     text-transform: uppercase;
     color: var(--primary-text-color);
 }
@@ -40,8 +39,6 @@
 }
 
 .feature-text{
-    line-height: 24px;
-    /* or 171% */
-    letter-spacing: 0.03em;
+    @include font(14px, 400, 24px, 0.03em);
     color: var(--secondary-text-color);
 }
