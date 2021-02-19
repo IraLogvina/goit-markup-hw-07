@@ -176,6 +176,16 @@ body {
   color: var(--primary-text-color);
 }
 
+.feature-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
 .hero-button {
   font-size: 16px;
   font-weight: 700;
@@ -434,16 +444,6 @@ body {
   display: flex;
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.feature-title {
-  margin-bottom: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-text-color);
 }
 
 .feature-list {

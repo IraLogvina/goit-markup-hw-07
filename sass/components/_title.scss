@@ -23,3 +23,9 @@
     color: var(--primary-text-color);
 }
 
+.feature-title{
+    margin-bottom: 10px;
+    @include font(14px, 700, 16px, 0.03em);
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
