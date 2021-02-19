@@ -557,17 +557,13 @@ body {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.work-examples-text {
-  padding: 20px 24px;
-}
-
 /* Оформление оверлея*/
 .work-examples-img-thumb {
   position: relative;
   overflow: hidden;
 }
 
-.work-examples .img-text {
+.work-examples .overlay {
   position: absolute;
   display: inline-block;
   top: 0;
@@ -581,15 +577,19 @@ body {
   letter-spacing: 0.03em;
   /* or 156% */
   color: var(--white-text-color);
-  background-color: rgba(33, 150, 243, 0.7);
+  background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-examples-item:hover .img-text {
+.work-examples-item:hover .overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.work-examples-text {
+  padding: 20px 24px;
 }
 /*# sourceMappingURL=portfolio.css.map */

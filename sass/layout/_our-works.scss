@@ -51,9 +51,6 @@
 
 }
 
-.work-examples-text{
-    padding: 20px 24px;
-}
 
 /* Оформление оверлея*/
 
@@ -62,7 +59,7 @@
     overflow: hidden;
 }
 
-.work-examples .img-text{
+.work-examples .overlay{
     position: absolute;
     display: inline-block;
     top: 0;
@@ -77,11 +74,14 @@
 /* or 156% */
     // letter-spacing: 0.03em;
     color: var(--white-text-color);
-    background-color: rgba(33, 150, 243, 0.7);
+    background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-examples-item:hover .img-text{
+.work-examples-item:hover .overlay{
     transform: translateY(0);
+}
+.work-examples-text{
+    padding: 20px 24px;
 }
