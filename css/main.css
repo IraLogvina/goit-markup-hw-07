@@ -101,10 +101,9 @@ body {
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
-  font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
-  /* identical to box height */
+  font-weight: 700;
+  line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
@@ -192,10 +191,8 @@ body {
           align-items: center;
   padding: 10px 29px;
   font-size: 16px;
-  line-height: 1.87;
-  width: 200px;
-  height: 50px;
-  /* identical to box height, or 187% */
+  font-weight: 700;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   text-transform: capitalize;
   background-color: var(--accent-color);
